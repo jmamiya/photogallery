@@ -4,23 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main>
+      <header>
         <h1>TK Photography</h1>
-        <nav>
+          <nav>
             <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
             </ul>
-        </nav>  
-        <section>
+          </nav>  
+      </header>
+        <section id="about">
           <h2>About</h2>
-          <p>Hello!</p>
-          <p>I'm TK and I'm a Photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and its taken me all over the world.</p>
+            <p>Hello!</p>
+            <p>I'm TK and I'm a Photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and its taken me all over the world.</p>
         </section>
+        <section id="gallery">
+          <h2>Gallery</h2>
+          <p>Here are some highlights of my work. The locations and year are in the captions.</p>
+            <section id="photos">
+            <div class="column">
+              <div class="row">
+                <figure>
+                  <img src="Chile.png" alt="1">
+                    <figcaption class="bottom white">
+                      CHILE, 2001
+                    </figcaption>
+                </figure>
+                <figure>
+                  <img src="Guatemala.png" alt="1">
+                    <figcaption class="top white">
+                      GUATEMALA, 1997
+                    </figcaption>
+                </figure>
+                <figure>
+                  <img src="Hawaii.png" alt="1">
+                    <figcaption class="bottom white">
+                      HAWAII, 2010
+                    </figcaption>
+                </figure>
+              </div>
+              <div class="row">
+                <figure>
+                  <img src="Iran.png" alt="Ireland, 2012">
+                    <figcaption class="top black">
+                      IRAN, 1999
+                    </figcaption>
+                </figure>
+                <figure>
+                  <img src="Ireland.png" alt="Ireland, 2012">
+                    <figcaption class="top black">
+                      Ireland, 2012
+                    </figcaption>
+                </figure>
+                <figure>
+                  <img src="Italy.png" alt="Italy, 2015">
+                    <figcaption class="bottom black">
+                      ITALY, 2015
+                    </figcaption>
+                </figure>
+              </div>
+              <div class="row">
+              <figure>
+                <img src="Moab-Desert.png" alt="Moab Desert, 2020">
+                  <figcaption class="bottom white">
+                    MOAB DESERT, 2020
+                  </figcaption>
+              </figure>
+              <figure>
+                <img src="Rocky-Mountains.png" alt="Rocky Mountains, 2009">
+                  <figcaption class="top black">
+                    ROCK MOUNTAINS, 2009
+                  </figcaption>
+              </figure>
+              <figure>
+                <img src="Switzerland.png" alt="Switzerland, 2014">
+                  <figcaption class="top black">
+                    SWITZERLAND, 2014
+                  </figcaption>
+              </figure>
+               </div>
+            <div class="row">
+              <figure>
+                <img src="UK.png" alt="UK, 2005">
+                  <figcaption class="top black">
+                    UK, 2005
+                  </figcaption>
+              </figure>
+              <figure>
+                <img src="USA.png" alt="USA, 2021">
+                  <figcaption class="top black">
+                    USA, 2021
+                  </figcaption>
+              </figure>
+              <figure>
+                <img src="Wyoming.png" alt="Wyoming, 2021">
+                  <figcaption class="top white">
+                    WYOMING, 2021
+                  </figcaption>
+              </figure>
+            </div>
+            </section> 
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+            <p>Please fill out this contact form and I'll connect with you soon.</p>
+            <div class="cform">
+              <form action="action_page.php">
+            
+                <label for="email">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="YOUR FULL NAME">
+            
+                <label for="email">Email</label>
+                <input type="text" id="lname" name="lastname" placeholder="ENTER YOUR EMAIL ADDRESS">
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="WHAT CAN I HELP YOU WITH?" style="height:100px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+            </div>
+        </section>
+        <footer>
+          <p><small>Copyright 2021 TK Photography</small></p>
+        </footer>
     </main>
 	<script src="index.js"></script>
   </body>
